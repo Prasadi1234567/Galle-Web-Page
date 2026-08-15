@@ -1,0 +1,501 @@
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #003366;
+    padding: 15px;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section Styling */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://helabima.com/wp-content/uploads/2022/09/Galle_fort_aerial_1200X800.jpg') center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #005c97;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+/* Cards Layout */
+.features {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: rgb(245, 245, 247);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+/* Map Frame Responsive */
+.map-wrapper {
+    border: 3px solid #003366;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.navbar {
+    background: rgba(0, 0, 0, 0.2); /* ටිකක් පාරදෘශ්‍ය පාටක් */
+    padding: 15px 0;
+    margin-top: 10px;
+}
+
+.navbar ul {
+    list-style: none; /* බුලට් පොයින්ට්ස් අයින් කරනවා */
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* ලින්ක්ස් අතර පරතරය */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none; /* යටින් ඉරි අයින් කරනවා */
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* මවුස් එක උඩ තියද්දී පාට වෙනස් වෙනවා */
+}
+
+/* Header Background */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Content Container - මේකෙන් තමයි පේජ් එක හිර වෙලා නැතුව ලස්සනට පේන්නේ */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* බොක්ස් එකට ලස්සන සෙවනැල්ලක් */
+}
+
+/* Sections */
+h2 {
+    color: #1e3c72;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+/* Container Box එක */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Individual Cards Styling */
+.card {
+    background: #f8fafc !important; /* Soft Light Slate */
+    border: 1px solid #e2e8f0;
+    border-top: 4px solid #1e3a8a !important; /* Deep Navy Blue Top Accent */
+    border-radius: 12px !important;
+    padding: 25px !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* Mouse එක තියෙද්දී Lift වෙන Effect එක */
+.card:hover {
+    transform: translateY(-8px) !important;
+    background: #ffffff !important;
+    border-top-color: #F4C430 !important; /* Hover කරද්දී Warm Gold වෙනවා */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Card Headings */
+.card h3 {
+    color: #0f172a !important; /* Deep Slate Blue */
+    font-size: 1.25rem !important;
+    margin-bottom: 12px;
+}
+
+/* Card Text */
+.card p {
+    color: #475569 !important; /* Easy to read Gray */
+    font-size: 0.95rem !important;
+    line-height: 1.6;
+}
+
+/* History & Culture Section */
+.history-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    color: #1e3a8a;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    color: #64748b;
+    font-size: 1rem;
+}
+
+/* History Cards Grid */
+.history-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.history-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0;
+    border-top: 4px solid #1e3a8a !important; /* Deep Navy Blue Edge */
+    border-radius: 12px;
+    padding: 25px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.history-card:hover {
+    transform: translateY(-6px);
+    border-top-color: #F4C430 !important; /* Warm Gold on Hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-badge {
+    display: inline-block;
+    background: #e0e7ff;
+    color: #1e3a8a;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.history-card h3 {
+    color: #0f172a;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.history-card p {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+/* History Section Base */
+.history-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    color: #1e3a8a;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    color: #64748b;
+    font-size: 1rem;
+}
+
+/* History Cards Grid */
+.history-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Card Styling */
+.history-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    overflow: hidden; /* Image එක උඩට පනින්නේ නැති වෙන්න */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.history-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Image Wrapper and Zoom Effect */
+.card-img-wrapper {
+    height: 180px;
+    overflow: hidden;
+    position: bottom ;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Image එක නියමෙට Fill වෙනවා */
+    transition: transform 0.4s ease;
+}
+
+.history-card:hover .card-img-wrapper img {
+    transform: scale(1.08); /* Hover කරද්දී පොඩ්ඩක් Zoom වෙනවා */
+}
+
+/* Card Text Content Area */
+.card-content {
+    padding: 20px;
+}
+
+.card-badge {
+    display: inline-block;
+    background: #e0e7ff;
+    color: #1e3a8a;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.history-card h3 {
+    color: #0f172a;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.history-card p {
+    color: #475569;
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+/* Card එක ඇතුළේ Flexbox හරහා පිළිවෙළ සකස් කිරීම */
+.history-card {
+    display: flex;
+    flex-direction: column; /* උඩ සිට යටට පිළිවෙළට සකසයි */
+    justify-content: space-between;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    border-top: 4px solid #1e3a8a;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* පහළින් තියෙන Photo එකේ Box එක */
+.card-img-bottom {
+    margin-top: 15px; /* Description එකයි Photo එකයි අතර Space එක */
+    width: 100%;
+    height: 180px; /* Photo එකේ උස පාලනය කිරීමට */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.card-img-bottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Photo එක ඇදී යන්නේ නැතුව ලස්සනට Crop වී සැකසේ */
+}
+/* Quick Stats Bar */
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    background: #1e3a8a;
+    color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    margin: 30px auto;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-box h3 {
+    font-size: 2rem;
+    color: #F4C430; /* Warm Gold */
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    font-size: 0.9rem;
+    color: #e2e8f0;
+}
+
+/* CTA Cards */
+.cta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.cta-card {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #1e3a8a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background: #F4C430;
+    color: #0f172a;
+}
+
+.dot.red { background-color: #ef4444; }
+.dot.blue { background-color: #3b82f6; }
+.dot.green { background-color: #10b981; }
+.dot.orange { background-color: #f97316; }
+
+.btn-download {
+    display: block;
+    text-align: center;
+    background: #1e3a8a;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-download:hover {
+    background: #F4C430;
+    color: #0f172a;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 900px) {
+    .geo-layout {
+        grid-template-columns: 1fr;
+    }
+}
+/* Photos ටික Horizontal (පැත්තෙන් පැත්තට) Align කිරීමට */
+.photo-gallery {
+    display: flex; /* Horizontal Layout එකක් සාදයි */
+    flex-direction: row;
+    flex-wrap: wrap; /* Screen එක පොඩි වුණොත් ලස්සනට adjust වෙනවා */
+    justify-content: center; /* Photos ටික මැදට Align කිරීම */
+    gap: 20px; /* Photos අතර පරතරය */
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+/* Photo එක එක සමාන ප්‍රමාණයට සකස් කිරීම */
+.photo-gallery img {
+    width: 300px; /* කැමති ප්‍රමාණයකට (width) වෙනස් කරගත හැක */
+    height: 220px; /* සියලුම ඡායාරූප එකම උසකට ගැනීමට */
+    object-fit: cover; /* Photo එක ඇදී යන්නේ නැතුව ලස්සනට Crop වී Fit වීම */
+    border-radius: 10px; /* කොන් රවුම් කිරීම */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* පොඩි Shadow එකක් එකතු කිරීම */
+    transition: transform 0.3s ease;
+}
+
+/* Mouse එක උඩට ගෙනියද්දී පොඩි Animation එකක් (Optional) */
+.photo-gallery img:hover {
+    transform: translateY(-5px);
+}
+/* 1. Entire Page Background */
+body {
+    background-color: #f8fafc !important; /* Soft Light Slate/Grey background */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+/* 2. Main Container (මැද Content Box එක පළල් කිරීම) */
+.container, main, .content-wrapper {
+    max-width: 1100px !important; /* 좁은 layout එක 1100px දක්වා පළල් කළා */
+    width: 90% !important;
+    margin: 40px auto !important; /* මැදට Align කිරීම */
+    background-color: #d0d483 !important; /* Content Box එක සුදු පාටින් කැපී පෙනීමට */
+    padding: 40px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important; /* Soft Shadow එකක් */
+}
+/* About Section Outer Container */
+.about-section {
+    max-width: 1000px;         /* Content එක එකපාරටම තලලා පැතිරෙන්නේ නැතුව ගානට තිබීමට */
+    margin: 40px auto;         /* උඩින් සහ යටින් 40px පරතරයක් තබා Center කිරීමට */
+    padding: 35px 30px;        /* ඇතුළත Padding එක */
+    background: #ffffff;       /* Card එක Clean White පැහැයෙන් තැබීම */
+    border-radius: 12px;       /* කොන් රවුම් කිරීම */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Soft Modern Shadow එකක් */
+    border: 1px solid #e2e8f0; /* සිනිඳු Border එකක් */
+    text-align: center;        /* අකුරු මැදට Align කිරීම */
+}
+
+/* "About the Area" Heading එක Styling කිරීම */
+.about-section h2 {
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;            /* Dark Slate Color (තද කළු වෙනුවට Modern Dark Grey) */
+    margin-top: 0;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+/* Paragraph (Description) එක Styling කිරීම */
+.about-section p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+    color: #64748b;            /* Soft Readable Slate Blue-Grey Color */
+    line-height: 1.7;          /* පේළි අතර කියවන්න ලේසි වන පරිදි පරතරය තැබීම */
+    max-width: 850px;          /* Text එක දිග වැඩි නොවී compact ලෙස තැබීමට */
+    margin: 0 auto;
+}
