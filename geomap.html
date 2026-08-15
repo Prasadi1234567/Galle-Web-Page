@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo-Portal Map | Galle</title>
+    <link rel="stylesheet" href="geoportral.css"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo-Portal Map | Galle</title>
+    <link rel="stylesheet" href="geoportral.css">
+    <!-- Google Fonts: Poppins & Montserrat -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- 💥 මේ INTERNAL STYLE එක දැම්මාම වෙන කිසිම CSS එකකින් මේක වෙනස් කරන්න බෑ, 100% වැඩ කරනවා -->
+    <style>
+        .hero-header {
+            width: 100% !important;
+            min-height: 300px !important;
+            max-height: 500px !important;
+            position: relative !important;
+            
+            /* 4K Aerial Photo with Dark Overlay */
+            background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)), 
+                        url('https://i.pinimg.com/736x/72/be/04/72be04e79fbbfef09717f2872259da6a.jpg') !important;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            padding: 20px 0 40px 0 !important;
+            box-sizing: border-box !important;
+        }
+
+        .hero-content {
+            text-align: center !important;
+            color: #ffffff !important;
+            max-width: 800px !important;
+            padding: 0 20px !important;
+            margin-top: 20px !important;
+        }
+
+        .hero-content h1 {
+            font-size: 2.2rem !important;
+            font-weight: 700 !important;
+            color: #ffffff !important;
+            margin-bottom: 10px !important;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6) !important;
+        }
+
+        .hero-content p {
+            font-size: 1rem !important;
+            color: #f1f5f9 !important;
+            font-weight: 300 !important;
+            margin: 0 !important;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6) !important;
+        }
+    </style>
+</head>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+   <header class="hero-header">
+    <nav class="navbar">
+        <ul>
+             <li><a href="geoportral.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="geomap.html">Geo-Portal Map</a></li>
+            <li><a href="history.html">History & Culture</a></li>
+            <li><a href="about.html"> Feedback</a></li>
+        </ul>
+    </nav>
+    
+    <div class="hero-content">
+        <h1>Galle Kadawathsathara DSD Geo-Portal</h1>
+        <p>Spatial Data Infrastructure for Urban Planning & Heritage Management</p>
+    </div>
+</header>
+<div class="portal-stats-grid">
+    <div class="portal-stat-card">
+        <h4>Spatial Reference</h4>
+        <p>WGS 84 / Geographic</p>
+    </div>
+    <div class="portal-stat-card">
+        <h4>Administrative Unit</h4>
+        <p>Galle KadawathSathara DSD</p>
+    </div>
+   
+    <div class="portal-stat-card">
+        <h4>Core Layers</h4>
+        <p>Heritage, Infra, Coastal</p>
+    </div>
+</div>
+    <main class="portal-container">
+    <h2 class="portal-title"> Interactive Geospatial Map (Geo-Portal)</h2>
+    <p class="portal-desc">Explore spatial distributions, urban infrastructure, and administrative boundaries of Galle Kadawat Sathara DSD.</p>
+
+    <!-- Map and Side Panel Wrapper -->
+    <div class="geo-layout">
+        <!-- Left Column: Map Viewer -->
+        <div class="map-column">
+           <!-- Geo-Portal / Map Section -->
+        <section class="map-section">
+            
+            <div class="map-container">
+               <iframe src="https://www.google.com/maps/d/embed?mid=1DQnSprzUeDimmR4tLCkBGn4IK5opRq8&ehbc=2E312F" width="100%" height="480"></iframe>
+                
+        </div>
+
+        <div class="info-card">
+    <h3>📥 Spatial Data Download Options</h3>
+    <ul class="meta-list">
+        <li><strong>Vector Layers:</strong> <a href="#">KML File (Google Earth)</a> | <a href="#">GeoJSON</a></li>
+        <li><strong>Attribute Tables:</strong> <a href="#">Infrastructure List (CSV)</a> | <a href="#">GN Boundaries (Excel)</a></li>
+        <li><strong>Print Layouts:</strong> <a href="#">Galle DSD Spatial Map (PDF)</a></li>
+    </ul>
+</div>
+
+            <div class="info-card">
+                <h3>💡 How to Navigate</h3>
+                <p>• Click on any pin to view detailed attributes.<br>
+                   • Use the top-left icon inside the map to toggle layers on/off.<br>
+                   • Use the square icon on top-right for full screen view.</p>
+            </div>
+
+            <div class="info-card download-card">
+                <h3>📥 Spatial Data Options</h3>
+   
+                <a href=" https://www.google.com/maps/d/embed?mid=1DQnSprzUeDimmR4tLCkBGn4IK5opRq8&ehbc=2E312F" target ="_blank" class="btn-download">Open Full Google Map</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

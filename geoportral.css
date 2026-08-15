@@ -1,0 +1,401 @@
+/* මුළු Website එකේම පසුබිම් පැහැය වෙනස් කිරීම */
+body {
+    background-color: #f5f9f5 !important; /* Soft Light Slate Grey */
+    margin: 0;
+    padding: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    color: white;
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+/* Navigation Bar (Bullets අයින් කර පාට ලස්සන කිරීම) */
+.navbar {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px 0;
+    border-radius: 8px;
+}
+
+.navbar ul {
+    list-style-type: none !important; /* Bullet points අයින් කරයි */
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffeb3b !important; /* Yellow hover effect */
+}
+
+/* Main Content Styling */
+body > div, main, .container {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+section {
+    background: white;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #0d47a1;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Header එක විශාල කිරීම සහ ලස්සන කිරීම */
+header {
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    color: white;
+    text-align: center;
+    padding: 90px 20px 50px 20px !important; /* Header එක උඩින් සහ යටින් උස (Height) වැඩි කිරීමට */
+    min-height: 380px; /* Header එකේ මුළු උස තව වැඩි කරයි */
+}
+
+/* "Galle" කියන Title එක තවත් විශාල කිරීම */
+header h1 {
+    font-size: 15rem !important; /* Text එක ගොඩක් විශාල කරයි */
+    font-weight: 700 !important;  /* තද Bold පෙනුම */
+    letter-spacing: 20px;          /* අකුරු අතර පරතරය වැඩි කරයි */
+    margin-bottom: 15px;
+    text-shadow: 3px 5px 10px rgba(0, 0, 0, 0.4); /* 3D Depth Shadow එකක් ලබා දීමට */
+}
+
+/* Subtitles / Text එක පැහැදිලි හා විශාල කිරීම */
+header p {
+    font-size: 1.3rem !important; /* Subtitle text size එක වැඩි කිරීමට */
+    font-weight: 400;
+    opacity: 0.95;
+    margin-bottom: 8px;
+}
+/* Header container - Video එක සීමා කිරීමට */
+.hero-header {
+    position: relative;
+    width: 100%;
+    min-height: 480px; /* Header එකේ උස */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+/* Background Video styling */
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Screen එකට හරියටම Fit වීම සදහා */
+}
+
+/* Dark Overlay (Video එක උඩින් කළු පැහැති තට්ටුවක් දමා අකුරු පැහැදිලි කිරීමට) */
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 15, 40, 0.55); /* ටිකක් තද නිල්/කළු Overlay එකක් */
+    z-index: 2;
+}
+
+/* Content layer - Video එක උඩින් අකුරු පෙනීමට */
+.header-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    padding: 60px 20px 30px 20px;
+}
+
+/* "Galle" Title Styling */
+.header-content h1 {
+    font-size: 15rem !important;
+    font-weight: 700;
+    letter-spacing: 20px;
+    margin-bottom: 10px;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.header-content p {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.15); /* Glassmorphism/Transparent පෙනුම */
+    backdrop-filter: blur(5px);
+    padding: 12px 20px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.navbar ul {
+    list-style: none !important;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffeb3b !important; /* Hover කළ විට කහ පැහැයට හැරේ */
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Overlay එකේ තද බව ටිකක් අඩු කිරීම (0.55 -> 0.35) */
+    background: rgba(0, 15, 30, 0.35); 
+    z-index: 2;
+}
+/* Background Video styling - Sharper look */
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    
+    /* Video එකේ පැහැදිලි බව සහ Contrast එක වැඩි කිරීමට */
+    filter: contrast(110%) brightness(95%);
+    image-rendering: -webkit-optimize-contrast;
+}
+.header-content h1 {
+    font-family: 'Cinzel', serif !important;
+    font-size: 15rem !important;
+    font-weight: 900;
+    letter-spacing: 20px;
+    margin-bottom: 10px;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+}
+/* Navigation links hover පාටට */
+.navbar a:hover {
+    color: #F4C430 !important;
+}
+html {
+    scroll-behavior: smooth; /* Click කළාම ලස්සනට slide වෙලා එතනට යන්න */
+}
+/* Layout Styling */
+.portal-container {
+    max-width: 1300px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.portal-title {
+    color: #1e3a8a;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.portal-desc {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+/* Two-Column Grid */
+.geo-layout {
+    display: grid;
+    grid-template-columns: 2.2fr 1fr; /* වම් පැත්තේ Map එකට වැඩි ඉඩක්, දකුණට Side Panel එකක් */
+    gap: 25px;
+}
+
+.info-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.info-card h3 {
+    color: #0f172a;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 8px;
+}
+
+/* Map Legend Styling */
+.legend-list {
+    list-style: none;
+    padding: 0;
+}
+
+.legend-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #334155;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.red { background-color: #ef4444; }
+.dot.blue { background-color: #3b82f6; }
+.dot.green { background-color: #10b981; }
+.dot.orange { background-color: #f97316; }
+
+.btn-download {
+    display: block;
+    text-align: center;
+    background: #1e3a8a;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-download:hover {
+    background: #F4C430;
+    color: #0f172a;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 900px) {
+    .geo-layout {
+        grid-template-columns: 1fr;
+    }
+}
+/* Header Main Title Formatting */
+.hero-content h1, 
+.header-overlay-content h1, 
+.main-title {
+    font-family: 'Poppins', 'Montserrat', 'Segoe UI', sans-serif !important; /* Font Type එක */
+    font-size: 2.2rem !important; /* Font Size එක */
+    font-weight: 700 !important;
+    letter-spacing: normal !important; /* අකුරු අතර තිබුණු වැඩි පරතරය අයින් කිරීම */
+    word-spacing: normal !important;
+    color: #ffffff !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6) !important;
+    margin-bottom: 10px !important;
+}
+/* Stats Grid Container (Cards 3 පැත්තෙන් පැත්තට පෙළගැස්වීම) */
+.portal-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive Grid එකක් සාදයි */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* Individual Stat Card */
+.portal-stat-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-left: 5px solid #1e3a8a; /* වම් පැත්තෙන් ලස්සන Navy Blue Line එකක් */
+    border-radius: 10px;
+    padding: 20px 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+/* Mouse එක Card එක උඩට ගෙනියද්දී Effect එක */
+.portal-stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(30, 58, 138, 0.1);
+    border-left-color: #2563eb; /* Hover කරද්දී Line එකේ Color එක Accent Blue වීම */
+}
+
+/* Heading (Spatial Reference, Administrative Unit, Core Layers) */
+.portal-stat-card h4 {
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase; /* අකුරු කැපිටල් කිරීම */
+    letter-spacing: 0.8px;
+    color: #64748b; /* Soft Slate Grey */
+    margin: 0 0 8px 0;
+}
+
+/* Content (WGS 84, Galle DSD, Heritage Layers) */
+.portal-stat-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0f172a; /* Dark Solid Blue-Black */
+    margin: 0;
+    line-height: 1.3;
+}
